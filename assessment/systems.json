@@ -1,0 +1,33 @@
+{
+  "organisation": "Fictional EU public hospital group used for this assessment",
+  "systems": [
+    {
+      "id": "A",
+      "name": "System A: staff policy assistant (RAG over administrative policies)",
+      "purpose": "Answers staff questions about internal administrative policies (leave, procurement, IT use) with citations to the source policy. No patient data, no clinical decisions.",
+      "roles": ["provider", "deployer"],
+      "prohibited_practice": null,
+      "annex_I_product": false,
+      "third_party_conformity_assessment": false,
+      "annex_III_area": null,
+      "profiling": false,
+      "interacts_with_natural_persons": true,
+      "generates_synthetic_content": true,
+      "uses_gpai_model": true
+    },
+    {
+      "id": "B",
+      "name": "System B (counter-example): emergency department triage assistant",
+      "purpose": "Suggests an urgency level for patients arriving at the emergency department, for review by a triage nurse.",
+      "roles": ["provider", "deployer"],
+      "prohibited_practice": null,
+      "annex_I_product": true,
+      "third_party_conformity_assessment": true,
+      "annex_III_area": "point 5(d), emergency healthcare patient triage",
+      "profiling": false,
+      "interacts_with_natural_persons": false,
+      "generates_synthetic_content": false,
+      "uses_gpai_model": false
+    }
+  ]
+}
